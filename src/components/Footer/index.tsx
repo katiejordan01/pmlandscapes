@@ -13,7 +13,9 @@ import {
   LocationContainer,
   LocationItem,
   FooterContainer,
-  Language
+  Language,
+  CustomCol,
+  CustomRow
 } from "./styles";
 
 interface SocialLinkProps {
@@ -41,8 +43,8 @@ const Footer = ({ t }: { t: TFunction }) => {
     <>
       <FooterSection>
         <Container>
-          <Row justify="space-around" gutter={[16, 16]}>
-            <Col lg={8} md={8} sm={40} xs={60}>
+          <CustomRow >
+            <CustomCol>
               <Language>{t("Contact")}</Language>
               <Para>
                 {t(`Do you have any questions? Feel free to reach out.`)}
@@ -50,16 +52,16 @@ const Footer = ({ t }: { t: TFunction }) => {
               <a href="mailto:pmlscapes@gmail.com">
                 <Chat>{t(`Let's Chat`)}</Chat>
               </a>
-            </Col>
-            <Col lg={8} md={8} sm={40} xs={60}>
+            </CustomCol>
+            <CustomCol>
               <Language>{t("Locations")}</Language>
               <LocationContainer>
                 <LocationItem>Snellville, GA</LocationItem>
                 <LocationItem>Cumming, GA</LocationItem>
                 <LocationItem>Dawsonville, GA</LocationItem>
               </LocationContainer>
-            </Col>
-          </Row>
+            </CustomCol>
+          </CustomRow>
         </Container>
       </FooterSection>
       <Extra>
