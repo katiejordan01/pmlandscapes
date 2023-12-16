@@ -35,8 +35,8 @@ export const ButtonContainer = styled("div")`
   max-width: 50%; /* Adjust this value to control the button's width */
 
   @media only screen and (max-width: 768px) {
-    margin-right: 0; /* Reset margin for smaller screens */
-    max-width: 67%; /* Set to 100% on smaller screens */
+    max-width: 100%; /* Set to 100% on smaller screens */
+    justify-content: center;
     padding-top: 0.75rem;
   }
 `;

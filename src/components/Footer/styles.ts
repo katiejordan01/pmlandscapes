@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { Col, Row } from "antd"
 
 export const FooterSection = styled("footer")`
   background: #f0ece2;
@@ -185,5 +186,15 @@ export const LocationItem = styled("div")`
   color: #113946;
   font-size: 14px;
   line-height: 1.2;
+`;
+
+export const CustomCol = styled(Col)`
+  max-width: 50%;
+`;
+
+export const CustomRow = styled(Row)`
+  @media screen and (max-width: 414px) {
+    justify-content: center
+  }
 `;
 
