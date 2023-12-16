@@ -42,7 +42,7 @@ const Footer = ({ t }: { t: TFunction }) => {
       <FooterSection>
         <Container>
           <Row justify="space-around" gutter={[16, 16]}>
-            <Col lg={8} md={8} sm={40} xs={60} style={{marginLeft: "0px", marginRight: "0px" }}>
+            <Col lg={8} md={8} sm={40} xs={60}>
               <Language>{t("Contact")}</Language>
               <Para>
                 {t(`Do you have any questions? Feel free to reach out.`)}
@@ -51,7 +51,7 @@ const Footer = ({ t }: { t: TFunction }) => {
                 <Chat>{t(`Let's Chat`)}</Chat>
               </a>
             </Col>
-            <Col lg={8} md={8} sm={40} xs={60} style={{marginLeft: "0px", marginRight: "0px" }}>
+            <Col lg={8} md={8} sm={40} xs={60}>
               <Language>{t("Locations")}</Language>
               <LocationContainer>
                 <LocationItem>Snellville, GA</LocationItem>

@@ -3,13 +3,13 @@
   "text": "Multi-Trade Remodeling and Hardscaping. Schedule a free consultation at PMLscapes@gmail.com or 678-382-8164",
   "button": [
     {
-      "title": "Services",
-      "scrollTo": "services"
+      "title": "Contact",
+      "scrollTo": "contact"
     },
     {
-      "title": "Learn more",
+      "title": "Services",
       "color": "#fff",
-      "scrollTo": "media"
+      "scrollTo": "services"
     }
   ]
 }
