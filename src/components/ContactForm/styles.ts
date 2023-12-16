@@ -27,11 +27,36 @@ export const Span = styled("span")`
 `;
 
 export const ButtonContainer = styled("div")`
-  text-align: center; /* Align the button to the center */
-  position: relative;
-  margin-top: 1rem; /* Adjust the top margin to control distance */
+  display: flex;
+  justify-content: flex-end; /* Aligns content to the right */
+  align-items: center;
+  height: 100%;
+  margin-right: auto; /* Pushes the button to the right as much as possible */
+  max-width: 50%; /* Adjust this value to control the button's width */
 
-  @media only screen and (max-width: 414px) {
+  @media only screen and (max-width: 768px) {
+    margin-right: 0; /* Reset margin for smaller screens */
+    max-width: 67%; /* Set to 100% on smaller screens */
     padding-top: 0.75rem;
+  }
+`;
+
+export const ContactInfo = styled.p`
+  font-size: 20px;
+  color: #113946;
+  margin-bottom: 10px;
+  p {
+    margin: -5px 0; /* Adjust the margin as needed */
+  }
+
+  a {
+    text-decoration: underline;
+    color: #113946;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      text-decoration: underline;
+      color: #c7b198; /* Remove !important */
+    }
   }
 `;

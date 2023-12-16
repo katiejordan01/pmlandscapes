@@ -57,7 +57,7 @@ const ServiceBlock = ({
           </Col>
           <Col lg={11} md={11} sm={11} xs={24}>
             <ContentWrapper>
-              <h6>{t(title)}</h6>
+              <h6 style={{ textAlign: "center" }}>{t(title)}</h6>
               <Content>{t(content)}</Content>
               <Content>{t(content2)}</Content>
               <Content>{t(content3)}</Content>

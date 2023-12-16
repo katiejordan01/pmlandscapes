@@ -13,6 +13,22 @@ export const HeaderSection = styled("header")`
 
 export const LogoContainer = styled(Link)`
   display: flex;
+  align-items: center; /* Align logo vertically */
+  justify-content: flex-start; /* Push logo to the left */
+  max-width: 50%; /* Limit the logo's width */
+  margin-right: auto; /* Push the logo to the left */
+
+  img {
+    width: auto;
+    max-height: 70px; /* Adjust maximum height of the logo */
+  }
+
+  @media only screen and (max-width: 768px) {
+    max-width: 30%; /* Adjust the logo's size for smaller screens */
+    img {
+      max-height: 50px; /* Adjust maximum height of the logo for smaller screens */
+    }
+  }
 `;
 
 export const NavLink = styled("div")`
@@ -41,7 +57,7 @@ export const Burger = styled("div")`
   display: none;
 
   svg {
-    fill: #2e186a;
+    fill: #113946;
   }
 `;
 

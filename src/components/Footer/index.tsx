@@ -41,17 +41,17 @@ const Footer = ({ t }: { t: TFunction }) => {
     <>
       <FooterSection>
         <Container>
-          <Row justify="space-around">
-            <Col lg={8} md={8} sm={12} xs={24}>
+          <Row justify="space-around" gutter={[16, 16]}>
+            <Col lg={8} md={8} sm={40} xs={60} style={{marginLeft: "0px", marginRight: "0px" }}>
               <Language>{t("Contact")}</Language>
               <Para>
-                {t(`Do you have any question? Feel free to reach out.`)}
+                {t(`Do you have any questions? Feel free to reach out.`)}
               </Para>
               <a href="mailto:pmlscapes@gmail.com">
                 <Chat>{t(`Let's Chat`)}</Chat>
               </a>
             </Col>
-            <Col lg={8} md={8} sm={12} xs={24}>
+            <Col lg={8} md={8} sm={40} xs={60} style={{marginLeft: "0px", marginRight: "0px" }}>
               <Language>{t("Locations")}</Language>
               <LocationContainer>
                 <LocationItem>Snellville, GA</LocationItem>
@@ -59,26 +59,9 @@ const Footer = ({ t }: { t: TFunction }) => {
                 <LocationItem>Dawsonville, GA</LocationItem>
               </LocationContainer>
             </Col>
-            <Col lg={8} md={8} sm={12} xs={24}>
-            </Col>
           </Row>
         </Container>
       </FooterSection>
-      <Extra>
-        <Container border={true}>
-          <Row justify="space-around">
-            <Col lg={8} md={8} sm={12} xs={24}>
-              {/* Content for the first column */}
-            </Col>
-            <Col lg={8} md={8} sm={12} xs={24}>
-              {/* Content for the second column */}
-            </Col>
-            <Col lg={8} md={8} sm={12} xs={24}>
-              {/* Content for the third column */}
-            </Col>
-          </Row>
-        </Container>
-      </Extra>
       <Extra>
       <Container border={true}>
           <Row
