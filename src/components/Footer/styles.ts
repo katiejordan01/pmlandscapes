@@ -83,25 +83,15 @@ export const LogoContainer = styled("div")`
   flex-direction: column;
   align-items: center;
   margin-bottom: 10px;
-  max-width: 100%;
+  max-width: 80%%;
+  justify-content: center;
 
-  img {
-    width: 100%;
-    max-height: auto;
 
-    @media only screen and (max-width: 768px) {
-      max-height: auto;
-    }
-  }
-
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1000px) {
     flex-direction: column-reverse;
     margin-bottom: 0;
     max-width: 100%;
-
-    img {
-      max-height: auto;
-    }
+    justify-content: center;
   }
 `;
 
