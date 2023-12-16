@@ -38,27 +38,6 @@ export const Extra = styled("section")`
   padding-bottom: 2rem;
 `;
 
-export const LogoContainer = styled("div")`
-display: flex;
-align-items: center; /* Align logo vertically */
-justify-content: flex-start; /* Push logo to the left */
-max-width: 50%; /* Limit the logo's width */
-margin-right: auto; /* Push the logo to the left */
-margin-left: 0;
-
-img {
-  width: auto;
-  max-height: 70px; /* Adjust maximum height of the logo */
-}
-
-@media only screen and (max-width: 768px) {
-  max-width: 30%; /* Adjust the logo's size for smaller screens */
-  img {
-    max-height: 50px; /* Adjust maximum height of the logo for smaller screens */
-  }
-}
-`;
-
 export const Para = styled("div")`
   color: #113946;
   font-size: 14px;
@@ -98,13 +77,38 @@ export const Empty = styled("div")`
   height: 53px;
 `;
 
-export const FooterContainer = styled("div")`
-  max-width: 510px;
-  width: 50%;
+export const LogoContainer = styled("div")`
   display: flex;
-  justify-content: center; /* Center the content horizontally */
-  align-items: center; /* Center the content vertically */
-  gap: 0%; /* Adjust the gap between social icons */
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+  max-width: 100%;
+
+  img {
+    width: 100%;
+    max-height: auto;
+
+    @media only screen and (max-width: 768px) {
+      max-height: auto;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column-reverse;
+    margin-bottom: 0;
+    max-width: 100%;
+
+    img {
+      max-height: auto;
+    }
+  }
+`;
+
+export const FooterContainer = styled("div")`
+  display: flex;
+  align-items: center;
+  max-width: 50%;
+  padding-left: 5%;
 
   a {
     &:hover,
@@ -117,8 +121,14 @@ export const FooterContainer = styled("div")`
   }
 
   img {
-    width: 30%; /* Adjust the width to your desired size */
-    height: 30%; /* Adjust the height to your desired size */
+    width: 30%;
+    height: 30%;
+  }
+
+  @media only screen and (max-width: 768px) {
+    padding-left: 0%;
+    text-align: center;
+    max-width: 100%;
   }
 `;
 
