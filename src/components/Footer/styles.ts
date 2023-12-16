@@ -39,8 +39,24 @@ export const Extra = styled("section")`
 `;
 
 export const LogoContainer = styled("div")`
-  display: flex;
-  position: relative;
+display: flex;
+align-items: center; /* Align logo vertically */
+justify-content: flex-start; /* Push logo to the left */
+max-width: 50%; /* Limit the logo's width */
+margin-right: auto; /* Push the logo to the left */
+margin-left: 0;
+
+img {
+  width: auto;
+  max-height: 70px; /* Adjust maximum height of the logo */
+}
+
+@media only screen and (max-width: 768px) {
+  max-width: 30%; /* Adjust the logo's size for smaller screens */
+  img {
+    max-height: 50px; /* Adjust maximum height of the logo for smaller screens */
+  }
+}
 `;
 
 export const Para = styled("div")`
@@ -84,7 +100,7 @@ export const Empty = styled("div")`
 
 export const FooterContainer = styled("div")`
   max-width: 510px;
-  width: 100%;
+  width: 50%;
   display: flex;
   justify-content: center; /* Center the content horizontally */
   align-items: center; /* Center the content vertically */

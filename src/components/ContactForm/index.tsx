@@ -4,7 +4,7 @@ import { Slide} from "react-awesome-reveal";
 import { ContactProps } from "./types";
 import { Button } from "../../common/Button";
 import Block from "../Block";
-import { ContactContainer, ButtonContainer } from "./styles";
+import { ContactContainer, ButtonContainer, ContactInfo } from "./styles";
 
 const Contact = ({ title, content, id, t }: ContactProps) => {
   const handleEmailClick = () => {
@@ -25,8 +25,15 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
         <Col lg={12} md={11} sm={24} xs={24}>
           <Slide direction="left" triggerOnce>
             <Block title={title} content={content} />
-            <p> Email: PMLscapes@gmail.com</p>
-            <p> Call: 678-382-8164</p>
+            <ContactInfo>
+              <p>
+              Email: <a href={`mailto:PMLscapes@gmail.com`} onClick={handleEmailClick}>PMLscapes@gmail.com</a>
+              </p>
+              <br />
+              <p>
+              Call: <a href="tel:6783828164">678-382-8164</a>
+              </p>
+            </ContactInfo>
           </Slide>
         </Col>
         <Col lg={12} md={12} sm={24} xs={24}>

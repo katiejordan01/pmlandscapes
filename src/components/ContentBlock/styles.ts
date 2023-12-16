@@ -49,14 +49,12 @@ export const MinPara = styled("p")`
 
 export const ButtonWrapper = styled("div")`
   display: flex;
-  justify-content: space-between;
-  max-width: 100%;
+  justify-content: center;
+  align-items: center; /* Add this line to ensure vertical alignment */
+  gap: 20px; /* Adjust the space between buttons */
+  margin-left:10%
 
   @media screen and (min-width: 1024px) {
     max-width: 80%;
-  }
-
-  button:last-child {
-    margin-left: 20px;
   }
 `;
