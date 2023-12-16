@@ -27,7 +27,7 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
             <Block title={title} content={content} />
             <ContactInfo>
               <p>
-              Email: <a onClick={handleEmailClick}>PMLscapes@gmail.com</a>
+              Email: <a href="mailto:pmlscapes@gmail.com?subject=Consultation Request: [Service/Job Name]&body=Provide job details here..." >PMLscapes@gmail.com</a>
               </p>
               <br />
               <p>
