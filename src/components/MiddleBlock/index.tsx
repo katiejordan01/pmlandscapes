@@ -1,6 +1,5 @@
 import { Row, Col } from "antd";
 import { withTranslation, TFunction } from "react-i18next";
-import { Slide } from "react-awesome-reveal";
 import { Button } from "../../common/Button";
 import { MiddleBlockSection, Content, ContentWrapper } from "./styles";
 import { SvgIcon } from "../../common/SvgIcon";
@@ -25,7 +24,6 @@ const MiddleBlock = ({ title, p1, p2, p3, button, id, t }: MiddleBlockProps) => 
   };
   return (
     <MiddleBlockSection>
-      <Slide direction="up" triggerOnce>
         <Row 
           justify="center" 
           align="middle"
@@ -46,7 +44,6 @@ const MiddleBlock = ({ title, p1, p2, p3, button, id, t }: MiddleBlockProps) => 
             </Col>
           </ContentWrapper>
         </Row>
-      </Slide>
     </MiddleBlockSection>
   );
 };

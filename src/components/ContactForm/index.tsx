@@ -27,7 +27,7 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
             <Block title={title} content={content} />
             <ContactInfo>
               <p>
-              Email: <a href={`mailto:PMLscapes@gmail.com`} onClick={handleEmailClick}>PMLscapes@gmail.com</a>
+              Email: <a onClick={handleEmailClick}>PMLscapes@gmail.com</a>
               </p>
               <br />
               <p>
@@ -38,7 +38,7 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
         </Col>
         <Col lg={12} md={12} sm={24} xs={24}>
           <ButtonContainer>
-            <Button name="submit" onClick={handleEmailClick}>{t("Email me!")}</Button>
+            <Button name="submit" onClick={handleEmailClick}>{t("Email")}</Button>
           </ButtonContainer>
         </Col>
       </Row>
