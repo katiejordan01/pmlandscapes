@@ -7,15 +7,13 @@ import { SvgIcon } from "../../common/SvgIcon";
 interface MiddleBlockProps {
   title: string;
   p1: string;
-  p2: string;
-  p3: string;
   button: string;
   id: string
   t: TFunction;
 }
 
 
-const MiddleBlock = ({ title, p1, p2, p3, button, id, t }: MiddleBlockProps) => {
+const MiddleBlock = ({ title, p1, button, id, t }: MiddleBlockProps) => {
   const scrollTo = (id: string) => {
     const element = document.getElementById(id) as HTMLDivElement;
     element.scrollIntoView({
@@ -34,10 +32,8 @@ const MiddleBlock = ({ title, p1, p2, p3, button, id, t }: MiddleBlockProps) => 
             <SvgIcon src={"aboutme.png"} width="35%" height="20%" style={{ borderRadius: "50%" }}/>
               <h6>{t(title)}</h6>
               <Content>{t(p1)}</Content>
-              <Content>{t(p2)}</Content>
-              <Content>{t(p3)}</Content>
               {button && (
-                <Button name="submit" onClick={() => scrollTo("contact")}>
+                <Button name="submit" onClick={() => scrollTo("media")}>
                   {t(button)}
                 </Button>
               )}

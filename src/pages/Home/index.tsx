@@ -28,8 +28,6 @@ const Home = () => {
       <MiddleBlock
         title={MiddleBlockContent.title}
         p1={MiddleBlockContent.p1}
-        p2={MiddleBlockContent.p2}
-        p3={MiddleBlockContent.p3}
         button={MiddleBlockContent.button}
         id="about"
       />
