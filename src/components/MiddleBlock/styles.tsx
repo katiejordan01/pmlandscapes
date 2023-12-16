@@ -30,7 +30,3 @@ export const ContentWrapper = styled("div")`
     max-width: 100%;
   }
 `;
-
-export const RoundedSvgIcon = styled(SvgIcon)`
-  border-radius: 50%;
-`;
